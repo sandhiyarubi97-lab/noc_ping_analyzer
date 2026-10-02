@@ -1,4 +1,4 @@
-# noc_ping_analyzer
+# NOC_ping_analyzer
 Java projects to analyze network pings - NOC report generator
 Features:
 - Calculate Total, Average, Max Ping
