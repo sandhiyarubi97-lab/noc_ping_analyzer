@@ -1,10 +1,6 @@
-# NOC_ping_analyzer
-Java projects to analyze network pings - NOC report generator
-Features:
-- Calculate Total, Average, Max Ping
-- Counts Good Pings (<100ms)
-- Filters and lists good pings
-
-Tech: Core java, Arrays, Loops
-Created for learning and job preparation.
+# NOC_Ping_Analyzer
+A java-based tool to analyze network latency for NOC monitoring.
+** What it does: **
+Analyzes ping array and generates a report with average, max, and count of stable connections.
+** Skills Used: ** java, Arrays, Loops, Conditionals, Methods
   
