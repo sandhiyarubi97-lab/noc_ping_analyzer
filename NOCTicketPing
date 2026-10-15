@@ -1,0 +1,41 @@
+//Blueprint / class.....................................
+
+class Ticket {
+    int id;
+    String deviceName;
+    String issue;
+    String priority;
+
+//Constructor - need to call while creating ticket.........................
+    Ticket(int id, String deviceName, String issue) {
+        this.id = id;
+        this.deviceName = deviceName;
+        this.issue = issue;
+
+        if (issue.equals("Ping Fail")) {
+            this.priority = "P1 - CRITICAL";
+        } else {
+            this.priority = "P2 - HIGH";
+        }
+    }
+    //Method.....................................................
+    void display() {
+        System.out.println("----Ticket Created-----");
+        System.out.println("Device: " + deviceName);
+        System.out.println("Issue: " + issue);
+        System.out.println("Priority: " + priority);
+    }
+}
+public class NOCTicket {
+    public static void main(String[] args) {
+        //Creating objects - 2 tickets.........
+        Ticket t1 = new Ticket(101, "Router-CBE-01", "Ping Fail");
+        Ticket t2 = new Ticket(102,"Server-CBE-02", "High CPU");
+        Ticket t3 = new Ticket(103, "Firewall-01", "Disk Full");
+
+        t1.display();
+        t2.display();
+        t3.display();
+    }
+
+}
